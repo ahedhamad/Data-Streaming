@@ -33,7 +33,7 @@ const UserSchema = new mongoose.Schema({
 });
 
 // Create a model (collection) named 'users' based on the defined schema
-const UserModel = mongoose.model('tweets', UserSchema);
+const UserModel = mongoose.model('users', UserSchema);
 
 // Middleware for handling CORS and HTTP methods
 app.use((req, res, next) => {
