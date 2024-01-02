@@ -18,7 +18,7 @@ object ProducerKafka {
     // connection to mongodb
     val mongoClient: MongoClient = MongoClient("mongodb://localhost:27017")
     val database: MongoDatabase = mongoClient.getDatabase("admin")
-    val collection: MongoCollection[Document] = database.getCollection("tweets")
+    val collection: MongoCollection[Document] = database.getCollection("users")
     println("connect mongodb successfully...!")
 
     //create an index on the 'user' field in the 'users' collection
